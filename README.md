@@ -124,6 +124,7 @@ Please see [CONTRIBUTING](https://github.com/php-collective/awesome-php/blob/mas
 *Web development frameworks.*
 
 * [CakePHP](https://cakephp.org/) - A rapid application development framework.
+* [CodeIgniter](https://codeigniter.com/) - A powerful PHP framework with a very small footprint.
 * [Laminas](https://getlaminas.org/) - A framework comprised of individual components (previously Zend Framework).
 * [Laravel](https://laravel.com/) - A web application framework with expressive, elegant syntax.
 * [Nette](https://nette.org) - A web framework comprised of mature components.
