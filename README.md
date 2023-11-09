@@ -542,6 +542,7 @@ Please see [CONTRIBUTING](https://github.com/php-collective/awesome-php/blob/mas
 ### PDF
 *Libraries and software for working with PDF files.*
 
+* [Browsershot](https://github.com/spatie/browsershot) - Convert HTML to an image, PDF or string.
 * [Dompdf](https://github.com/dompdf/dompdf) - A HTML to PDF converter.
 * [PHPPdf](https://github.com/psliwa/PHPPdf) - A library for generating PDFs and images from XML.
 * [Snappy](https://github.com/KnpLabs/snappy) - A PDF and image generation library.
