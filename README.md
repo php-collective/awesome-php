@@ -278,7 +278,7 @@ Please see [CONTRIBUTING](https://github.com/php-collective/awesome-php/blob/mas
 ### Streams
 *Libraries for working with streams.*
 
-* [ByteStream](https://amphp.org/byte-stream/) - An asynchronous stream abstraction.
+* [ByteStream](https://amphp.org/byte-stream) - An asynchronous stream abstraction.
 * [Streamer](https://github.com/fzaninotto/Streamer) - A simple object-orientated stream wrapper library.
 
 ### Dependency Injection
@@ -336,13 +336,13 @@ Please see [CONTRIBUTING](https://github.com/php-collective/awesome-php/blob/mas
 *Libraries and applications for continuous integration.*
 
 * [CircleCI](https://circleci.com) - A continuous integration platform.
-* [GitlabCi](https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/) - Let GitLab CI test, build, deploy your code. TravisCi like.
+* [GitlabCi](https://about.gitlab.com/solutions/continuous-integration/) - Let GitLab CI test, build, deploy your code. TravisCi like.
 * [Jenkins](https://www.jenkins.io/) - A continuous integration platform with [PHP support](https://www.jenkins.io/solutions/php/).
 * [JoliCi](https://github.com/jolicode/JoliCi) - A continuous integration client written in PHP and powered by Docker.
 * [PHPCI](https://github.com/dancryer/phpci) - An open-source continuous integration platform for PHP.
-* [SemaphoreCI](https://semaphoreci.com/) - A continuous integration platform for open-source and private projects.
+* [SemaphoreCI](https://semaphoreci.com) - A continuous integration platform for open-source and private projects.
 * [Shippable](https://jfrog.com/blog/weve-acquired-shippable-to-complete-devops-pipeline-automation-from-code-to-production/) - A Docker based continuous integration platform for open source and private projects.
-* [Travis CI](https://travis-ci.org/) - A continuous integration platform.
+* [Travis CI](https://www.travis-ci.com) - A continuous integration platform.
 * [Setup PHP](https://github.com/shivammathur/setup-php) - A GitHub Action for PHP.
 
 ### Documentation
@@ -363,14 +363,14 @@ Please see [CONTRIBUTING](https://github.com/php-collective/awesome-php/blob/mas
 * [PHPGGC](https://github.com/ambionics/phpggc) - A library of PHP unserializable payloads along with a tool to generate them.
 * [PHP Encryption](https://github.com/defuse/php-encryption) - Secure PHP Encryption Library.
 * [PHP SSH](https://github.com/Herzult/php-ssh) - An experimental object-orientated SSH wrapper library.
-* [PHPSecLib](http://phpseclib.sourceforge.net/) - A pure PHP secure communications library.
+* [PHPSecLib](https://phpseclib.sourceforge.net) - A pure PHP secure communications library.
 * [random_compat](https://github.com/paragonie/random_compat) - PHP 5.x support for `random_bytes()` and `random_int()`
 * [RandomLib](https://github.com/ircmaxell/RandomLib) - A library for generating random numbers and strings.
 * [Symfony Security Monitoring](https://security.symfony.com/) - A web tool to check your Composer dependencies for security advisories, previously known as "SensioLabs Security Check".
 * [SQLMap](https://github.com/sqlmapproject/sqlmap) - An automatic SQL injection and database takeover tool. 
 * [TCrypto](https://github.com/timoh6/TCrypto) - A simple encrypted key-value storage library.
 * [VAddy](https://vaddy.net/) - A continuous security testing platform for web applications.
-* [Zap](https://owasp.org/www-project-zap/) - An integrated penetration testing tool for web applications.
+* [Zap](https://github.com/OWASP/www-project-zap) - An integrated penetration testing tool for web applications.
 
 ### Passwords
 *Libraries and tools for working with and storing passwords.*
@@ -405,7 +405,7 @@ Please see [CONTRIBUTING](https://github.com/php-collective/awesome-php/blob/mas
 
 * [CaptainHook](https://github.com/captainhookphp/captainhook) - An easy-to-use and flexible Git hook library. 
 * [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) - A library that detects PHP, CSS and JS coding standard violations.
-* [PHP CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) - A coding standards fixer library.
+* [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) - A coding standards fixer library.
 * [PHP Mess Detector](https://github.com/phpmd/phpmd) - A library that scans code for bugs, sub-optimal code, unused parameters and more.
 * [PHPCheckstyle](https://github.com/PHPCheckstyle/phpcheckstyle) - A tool to help adhere to certain coding conventions.
 * [PHPCPD](https://github.com/sebastianbergmann/phpcpd) - A library that detects copied and pasted code.
@@ -635,7 +635,7 @@ Libraries to help manage database schemas and migrations.
 * [OAuth2 Server](https://oauth2.thephpleague.com/) - An OAuth2 authentication server, resource server and client library.
 * [Opauth](https://github.com/opauth/opauth) - A multi-provider authentication framework.
 * [Paseto](https://github.com/paragonie/paseto) - Platform-Agnostic Security Tokens.
-* [PHP oAuthLib](https://github.com/Lusitanian/PHPoAuthLib) - Another OAuth library.
+* [PHP oAuthLib](https://github.com/daviddesberg/PHPoAuthLib) - Another OAuth library.
 * [Sentinel Social](https://cartalyst.com/manual/sentinel-social/2.0) - A library for social network authentication.
 * [Sentinel](https://cartalyst.com/manual/sentinel/2.0) - A framework agnostic authentication & authorisation library.
 * [TwitterOAuth](https://github.com/abraham/twitteroauth) - A Twitter OAuth library.
@@ -826,7 +826,6 @@ Libraries to help manage database schemas and migrations.
 * [Laravel Valet](https://laravel.com/docs/master/valet) - A development environment for macOS.
 * [PHP Brew](https://github.com/phpbrew/phpbrew) - A PHP version manager and installer.
 * [PHP Build](https://github.com/php-build/php-build) - Another PHP version installer.
-* [PHP OSX](https://php-osx.liip.ch/) - A PHP installer for OSX.
 
 ### Development Environment
 *Software and tools for creating and sharing a development environment.*
@@ -838,7 +837,7 @@ Libraries to help manage database schemas and migrations.
 * [Lando](https://lando.dev/) - Push-button development environments.
 * [Laravel Homestead](https://laravel.com/docs/master/homestead) - A local development environment for Laravel. 
 * [Laradock](http://laradock.io/) - A full PHP development environment based on Docker.
-* [Puppet](https://puppet.com/) - A server automation framework and application.
+* [Puppet](https://www.puppet.com) - A server automation framework and application.
 * [Takeout](https://github.com/tighten/takeout) - A Docker-based development-only dependency manager.
 * [Vagrant](https://www.vagrantup.com/) - A portable development environment utility.
 
@@ -884,7 +883,6 @@ Various resources, such as books, websites and articles, for improving your PHP 
 ### PHP Websites
 *Useful PHP-related websites.*
 
-* [libs.garden: PHP](https://libs.garden/php) - An overview of fastest growing PHP libraries.
 * [Nomad PHP](https://nomadphp.com/) - A online PHP learning resource.
 * [Laravel News](https://laravel-news.com/) - The official Laravel blog.
 * [PHP Annotated Monthly](https://blog.jetbrains.com/phpstorm/tag/php-annotated-monthly/) - A monthly digest of PHP news.
@@ -906,7 +904,7 @@ Various resources, such as books, websites and articles, for improving your PHP 
 * [Domain-Driven Design in PHP](https://leanpub.com/ddd-in-php) - Real examples written in PHP showcasing DDD Architectural Styles.
 * [Functional Programming in PHP](https://www.functionalphp.com/) - This book will show you how to leverage these new PHP5.3+ features by understanding functional programming principles
 * [Grumpy PHPUnit](https://leanpub.com/grumpy-phpunit) - A book about unit testing with PHPUnit by Chris Hartjes.
-* [Mastering Object-Orientated PHP](https://www.brandonsavage.net/) - A book about object-orientated PHP by Brandon Savage.
+* [Mastering Object-Orientated PHP](https://brandonsavage.net) - A book about object-orientated PHP by Brandon Savage.
 * [Modern PHP New Features and Good Practices](https://www.oreilly.com/library/view/~/9781491905173/) - A book about new PHP features and best practices by Josh Lockhart.
 * [Modernizing Legacy Applications in PHP](https://leanpub.com/mlaphp) - A book about modernizing legacy PHP applications by Paul M. Jones.
 * [PHP 7 Upgrade Guide](https://leanpub.com/php7) - An ebook covering all of the features and changes in PHP 7 by Colin O'Dell.
@@ -937,7 +935,7 @@ Various resources, such as books, websites and articles, for improving your PHP 
 * [The PHP Roundtable](https://phproundtable.com/) - The PHP Roundtable is a casual gathering of developers discussing topics that PHP nerds care about.
 * [PHP Town Hall](https://phptownhall.com/) - A casual PHP podcast by Ben Edmunds and Phil Sturgeon.
 * [Voices of the ElePHPant](https://voicesoftheelephpant.com/) - Interviews with the people who make the PHP community special.
-* [The Laracasts Snippet](http://laracasts.audio/) - The Laracasts snippet, each episode, offers a single thought on some aspect of web development.
+* [The Laracasts Snippet](https://laracasts.simplecast.com) - The Laracasts snippet, each episode, offers a single thought on some aspect of web development.
 * [php[podcast] episodes from php[architect]](https://www.phparch.com/podcast/) - The official podcast of php[architect] the industry's leading tech magazine and publisher focused on PHP and web development.
 * [Over Engineered](https://overengineered.fm/) - A podcast in mini-series where we explore unimportant programming questions in extreme detail.
 * [PHPUgly](https://www.phpugly.com/) - The ramblings of a few overworked PHP Developers.
