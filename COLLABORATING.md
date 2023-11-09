@@ -17,6 +17,9 @@ Please work through the following checklist when reviewing a project:
 - Validate URLs work correctly and don't point to anything malicious.
 - Ensure suggestions adhere to [CONTRIBUTING](https://github.com/ziadoz/awesome-php/blob/master/CONTRIBUTING.md).
 
+## Approvals
+We should aim to have at least 2 independant approvals from the team + several more from external contributors/people before accepting a new software/repo.
+
 ## Enhancements
 If you have an idea on how to improve the project, please open a ticket for discussion using the `Enhancement` label. Please don’t make any broad or sweeping changes without consulting other collaborators first and reaching a consensus.
 
