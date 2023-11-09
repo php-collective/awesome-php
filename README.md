@@ -260,6 +260,7 @@ Please see [CONTRIBUTING](https://github.com/php-collective/awesome-php/blob/mas
 * [Email Validator](https://github.com/nojacko/email-validator) - A small email address validation library.
 * [Fetch](https://github.com/tedious/Fetch) - An IMAP library.
 * [Mautic](https://github.com/mautic/mautic) - Email marketing automation
+* [mjml-php](https://github.com/spatie/mjml-php) - Convert MJML to HTML using PHP
 * [PHPMailer](https://github.com/PHPMailer/PHPMailer) - Another mailer solution.
 * [PHP IMAP](https://github.com/barbushin/php-imap) - A library to access mailboxes via POP3, IMAP and NNTP.
 * [Stampie](https://github.com/Stampie/Stampie) - A library for email services such as [SendGrid](https://sendgrid.com/), [PostMark](https://postmarkapp.com), [MailGun](https://www.mailgun.com/) and [MailChimp](https://mailchimp.com/features/transactional-email/).
