@@ -543,6 +543,7 @@ Please see [CONTRIBUTING](https://github.com/php-collective/awesome-php/blob/mas
 *Libraries and software for working with PDF files.*
 
 * [Dompdf](https://github.com/dompdf/dompdf) - A HTML to PDF converter.
+* [Gotenberg](https://github.com/gotenberg/gotenberg-php) - A PHP client for interacting with Gotenberg.
 * [PHPPdf](https://github.com/psliwa/PHPPdf) - A library for generating PDFs and images from XML.
 * [Snappy](https://github.com/KnpLabs/snappy) - A PDF and image generation library.
 * [WKHTMLToPDF](https://github.com/wkhtmltopdf/wkhtmltopdf) - A tool to convert HTML to PDF.
