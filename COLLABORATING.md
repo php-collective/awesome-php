@@ -21,6 +21,6 @@ Please work through the following checklist when reviewing a project:
 If you have an idea on how to improve the project, please open a ticket for discussion using the `Enhancement` label. Please don’t make any broad or sweeping changes without consulting other collaborators first and reaching a consensus.
 
 ## Join
-If you want to help out please send an email to my Github username [at] gmail [dot] com with the subject “Awesome PHP Collaborator and a link to your Github account and I’ll get back to you as soon as I can (I'm notoriously slow, sorry).
+If you want to help out please open a ticket and why you would want to be part of the collective :)
 
 Thank you for taking the time to help out with Awesome PHP, your help is appreciated!
