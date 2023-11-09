@@ -288,6 +288,7 @@ Please see [CONTRIBUTING](https://github.com/php-collective/awesome-php/blob/mas
 * [Acclimate](https://github.com/AcclimateContainer/acclimate-container) - A common interface to dependency injection containers and service locators.
 * [Auryn](https://github.com/rdlowrey/Auryn) - A recursive dependency injector.
 * [Container](https://github.com/thephpleague/container) - Another flexible dependency injection container.
+* [Illuminate Container](https://packagist.org/packages/illuminate/container) - A dependency injection container component ([see](https://github.com/laravel/framework)).
 * [Disco](https://github.com/bitExpert/disco) - A PSR-11 compatible, annotation-based dependency injection container.
 * [PHP-DI](https://php-di.org/) - A dependency injection container that supports autowiring.
 * [Pimple](https://pimple.symfony.com/) - A tiny dependency injection container.
