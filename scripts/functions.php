@@ -55,7 +55,11 @@ foreach (['curl', 'json'] as $extension) {
  * @return string The GitHub Personal Access Token.
  */
 function getGithubAccessToken() : string {
-    return getenv('GH_PA_TOKEN');
+    if (!$token = getenv('GH_PA_TOKEN')) {
+        throw new Exception('Could not retrieve GitHub Personal Access Token. Please set the environment variable GH_PA_TOKEN.');
+    }
+
+    return $token;
 }
 
 /**

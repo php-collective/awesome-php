@@ -27,7 +27,12 @@ foreach($githubRepos as $repoUrl) {
         continue;
     }
 
-    $repoData = fetchFromGithub('/repos/' . $matches[1], [], APHP_REQUEST_THROTTLE);
+    try {
+        $repoData = fetchFromGithub('/repos/' . $matches[1], [], APHP_REQUEST_THROTTLE);
+    } catch(Exception $e) {
+        printlnRed(" - {$matches[1]} could not be fetched from GitHub: " . $e->getMessage());
+        continue;
+    }
 
     $lastPush = strtotime($repoData['pushed_at']);
     $isArchived = $repoData['archived'];
