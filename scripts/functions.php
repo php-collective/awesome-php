@@ -105,10 +105,10 @@ function getGithubApiUrl(string $path, array $query = []): string
  * - No data is received.
  *
  * @param string $path The path on the GitHub API to send the request to.
- * @param array $query Optional. An associative array of query parameters to include in the request.
+ * @param array<string, string> $query Optional. An associative array of query parameters to include in the request.
  * @param int $throttle Optional. The number of seconds to wait between requests. Default is 0.
  *
- * @return array The data received from the GitHub API, decoded from JSON into an associative array.
+ * @return array<mixed> The data received from the GitHub API, decoded from JSON into an associative array.
  *
  * @throws \Exception If an error occurs during the request or the response cannot be processed.
  */
@@ -145,12 +145,16 @@ function fetchFromGithub(string $path, array $query = [], int $throttle = 0): ar
         return $response;
     }, 60 * 60);
 
+    if (!is_string($response)) {
+        throw new Exception('Could not fetch from GitHub, No response received');
+    }
+
     $data = json_decode($response, true);
     if (json_last_error() !== JSON_ERROR_NONE) {
         throw new Exception('Could not fetch from GitHub, JSON decode error: ' . json_last_error_msg());
     }
 
-    if ($data === null) {
+    if (!$data || !is_array($data)) {
         throw new Exception('Could not fetch from GitHub, No data received');
     }
 
@@ -198,7 +202,7 @@ function retrieveCache(string $identifier, Closure $callback, int $maxAge = 600)
 {
     $path = getCacheFilePath($identifier);
     if (file_exists($path) && getCacheFileAge($identifier) < $maxAge) {
-        return unserialize(file_get_contents($path));
+        return unserialize(file_get_contents($path) ?: '');
     }
 
     $data = $callback();
@@ -215,7 +219,7 @@ function retrieveCache(string $identifier, Closure $callback, int $maxAge = 600)
  */
 function getAwesomeListContents(): string
 {
-    return file_get_contents(APHP_PATH_MD);
+    return file_get_contents(APHP_PATH_MD) ?: '';
 }
 
 /**

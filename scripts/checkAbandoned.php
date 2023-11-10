@@ -35,9 +35,33 @@ foreach ($githubRepos as $repoUrl) {
 
         continue;
     }
+    
+    // ensure the 'full_name' exists and is a string
+    if (!isset($repoData['full_name']) ||  !is_string($repoData['full_name'])) {
+        printlnRed(" - {$repoUrl} has no 'full_name' field.");
+        continue;
+    }
+    
+    // ensure the 'pushed_at' exists and is a string
+    if (!isset($repoData['pushed_at']) ||  !is_string($repoData['pushed_at'])) {
+        printlnRed(" - {$repoUrl} has no 'pushed_at' field.");
+        continue;
+    }
+
+    // ensure the 'archived' exists and is a boolean
+    if (!isset($repoData['archived']) ||  !is_bool($repoData['archived'])) {
+        printlnRed(" - {$repoUrl} has no 'archived' field.");
+        continue;
+    }
 
     $lastPush = strtotime($repoData['pushed_at']);
     $isArchived = $repoData['archived'];
+
+    // check if the last push could be parsed
+    if (!$lastPush) {
+        printlnRed(" - {$repoUrl} has an invalid 'pushed_at' field.");
+        continue;
+    }
 
     // determine the lines where this repo is mentioned in the markdown file
     $lines = [];
