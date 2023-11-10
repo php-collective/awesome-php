@@ -17,3 +17,5 @@ jobs:
 
     - name: Run "Abandoned Check"
       run: php scripts/checkAbandoned.php
+      env:
+        GH_PA_TOKEN: ${{ secrets.GH_PA_TOKEN }}
