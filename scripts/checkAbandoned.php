@@ -57,7 +57,7 @@ foreach($githubRepos as $repoUrl) {
             );
         }
         
-        printlnRed(" - {$repoData['full_name']} last pushed at " . date('Y-m-d', $lastPush) . " (archived: " . ($isArchived ? 'yes' : 'no') . ")");
+        printlnRed(" - {$repoData['full_name']} last pushed at " . date('Y-m-d', $lastPush) . " (status: " . ($isArchived ? 'archived' : 'active') . ")");
     } else {
         printlnGreen(" - {$repoData['full_name']} ok.");
     }
