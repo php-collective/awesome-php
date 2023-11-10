@@ -1,9 +1,9 @@
-<?php 
+<?php
 require_once __DIR__ . '/functions.php';
 
 /**
  * This check goes through all GitHub repositories in the Awesome PHP list and checks if they are abandoned.
- * 
+ *
  * A repository is considered abandoned if it meets the following criteria:
  *  - The repository has not been updated in the last 4 years.
  *  - The repository has been marked as archived.
@@ -19,18 +19,20 @@ $githubRepos = findUrlsInMarkdown('github.com', $awesomeListContent);
 // Github action annotations
 $annotations = [];
 
-foreach($githubRepos as $repoUrl) {
+foreach ($githubRepos as $repoUrl) {
     // get the username/repo from the URL
     preg_match('/github.com\/([^\/]+\/[^\/]+)$/', $repoUrl, $matches);
     if (!isset($matches[1]) || empty($matches[1])) {
         echo "Could not parse repo URL: $repoUrl\n";
+
         continue;
     }
 
     try {
         $repoData = fetchFromGithub('/repos/' . $matches[1], [], APHP_REQUEST_THROTTLE);
-    } catch(Exception $e) {
+    } catch (Exception $e) {
         printlnRed(" - {$matches[1]} could not be fetched from GitHub: " . $e->getMessage());
+
         continue;
     }
 
@@ -39,32 +41,31 @@ foreach($githubRepos as $repoUrl) {
 
     // determine the lines where this repo is mentioned in the markdown file
     $lines = [];
-    foreach(explode("\n", $awesomeListContent) as $lineNumber => $line) {
+    foreach (explode("\n", $awesomeListContent) as $lineNumber => $line) {
         if (strpos($line, $repoUrl) !== false) {
             $lines[] = $lineNumber + 1;
         }
     }
 
     if ($lastPush < time() - APHP_LAST_PUSH_MAX_AGE || $isArchived) {
-        foreach($lines as $line) {
+        foreach ($lines as $line) {
             $annotations[] = sprintf(
-                "::%s file=%s,line=%d,col=0::Abandoned repository, last push at '%s' (archived: %s)", 
+                "::%s file=%s,line=%d,col=0::Abandoned repository, last push at '%s' (archived: %s)",
                 APHP_GH_ANNOTATION_LEVEL,
-                APHP_NAME_MD, 
+                APHP_NAME_MD,
                 $line,
                 date('Y-m-d', $lastPush),
-                $isArchived ? 'yes' : 'no'
+                $isArchived ? 'yes' : 'no',
             );
         }
-        
-        printlnRed(" - {$repoData['full_name']} last pushed at " . date('Y-m-d', $lastPush) . " (status: " . ($isArchived ? 'archived' : 'active') . ")");
+
+        printlnRed(" - {$repoData['full_name']} last pushed at " . date('Y-m-d', $lastPush) . ' (status: ' . ($isArchived ? 'archived' : 'active') . ')');
     } else {
         printlnGreen(" - {$repoData['full_name']} ok.");
     }
 }
 
 // print the annotations for GitHub Actions
-foreach($annotations as $annotation) {
+foreach ($annotations as $annotation) {
     echo $annotation . "\n";
 }
-?>
