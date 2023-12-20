@@ -619,6 +619,7 @@ Libraries to help manage database schemas and migrations.
 * [CLImate](https://github.com/thephpleague/climate) - A library for outputting colors and special formatting.
 * [Commando](https://github.com/nategood/commando) - Another simple command line opt parser.
 * [Cron Expression](https://github.com/mtdowling/cron-expression) - A library to calculate cron run dates.
+* [Cosmic](https://github.com/diego-ninja/cosmic) - A tool and a framework to build powerful and nice CLI applications.
 * [GetOpt](https://github.com/getopt-php/getopt-php) - A command line opt parser.
 * [GetOptionKit](https://github.com/c9s/GetOptionKit) - Another command line opt parser.
 * [PsySH](https://github.com/bobthecow/psysh) - Another PHP REPL.
